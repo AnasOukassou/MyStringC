@@ -180,7 +180,7 @@ MyStringTest_strchr (void)
 // strrchr()
 //==============================================================================
 
-/*
+
 void
 MyStringTest_strrchr (void)
 {
@@ -189,7 +189,7 @@ MyStringTest_strrchr (void)
   assert (MyString_strrchr (text, 'n' ) == text+4);  
   assert (MyString_strrchr (text, 'x' ) == NULL);
 }
-*/
+
 
 //==============================================================================
 // strcmp()
@@ -466,7 +466,7 @@ MyStringTest_runAll (void)
 
   MyStringTest_strlen();
   MyStringTest_strchr(); 
-  //MyStringTest_strrchr();
+  MyStringTest_strrchr();
   //MyStringTest_strpbrk();
 
   //MyStringTest_compareChar ();
