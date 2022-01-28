@@ -40,3 +40,17 @@ char * MyString_strrchr (char const string[], int character) {
 
     return p;
 }
+
+char * MyString_strpbrk (char const string[], char const accept[]) {
+    char * s = (char *) string;
+    char * p = NULL;
+
+    while (*s != '\0') {
+        char *c = MyString_strchr(accept, *s);
+        if(c != NULL) {
+            return s;
+        }
+        s++;
+    }
+    return p;
+}

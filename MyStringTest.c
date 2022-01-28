@@ -96,7 +96,7 @@ MyStringTest_memchr (void)
 // strpbrk()
 //==============================================================================
 
-/*
+
 void
 MyStringTest_strpbrk (void)
 {
@@ -106,7 +106,7 @@ MyStringTest_strpbrk (void)
   char * occ2= MyString_strpbrk (occ1+1, accept); assert (occ2 == text+7);
   char * occ3= MyString_strpbrk (occ2+1, accept); assert (occ3 == NULL); 
 }
-*/
+
 
 //==============================================================================
 // memcmp()
@@ -467,7 +467,7 @@ MyStringTest_runAll (void)
   MyStringTest_strlen();
   MyStringTest_strchr(); 
   MyStringTest_strrchr();
-  //MyStringTest_strpbrk();
+  MyStringTest_strpbrk();
 
   //MyStringTest_compareChar ();
   //MyStringTest_commonPrefixLength();
